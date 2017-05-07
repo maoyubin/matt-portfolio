@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+.input__trigger {
+  display: none; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*:focus {
+  outline: 0; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body {
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+a img {
+  border: none; }
+
+blockquote {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+#port--about-sec {
+  /* Begin ABOUT section */
+  background: url("../img/about.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh; }
+
+#port--project-sec {
+  /*Begin PROJECT section*/
+  background: url("../img/project.jpg") no-repeat fixed;
+  background-size: cover;
+  height: 100vh; }
+
+#port--skills-sec {
+  background: url("../img/skills.jpg") no-repeat fixed;
+  background-size: cover;
+  height: 100vh; }
+
+#port--contact-sec {
+  background: url("../img/contact.jpg") no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  height: 100vh; }
+
+#port--about-sec {
+  font-family: Tangerine, Georgia;
+  font-size: 40px; }
+
+#port--project-sec {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px; }
+
+.c-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: inherit;
+  font-size: 1rem;
+  color: white;
+  line-height: 90px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  transition: transform .5s ease-out; }
+  .c-header--isUp {
+    transform: translateY(-107%); }
+  .c-header .l-wrapper {
+    padding: 0 20px;
+    text-align: right; }
+    @media screen and (max-width: 767px) {
+      .c-header .l-wrapper {
+        text-align: left; } }
+
+.c-header,
+.site-menu > li:first-child {
+  height: 90px;
+  background-color: palette(san-marino); }
+
+/*# sourceMappingURL=main.css.map */
