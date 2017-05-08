@@ -1,4 +1,4 @@
-
+@import 'base/colors';
 
 @import 'abstracts/variables';
 @import 'abstracts/functions';
@@ -6,6 +6,8 @@
 @import 'abstracts/placeholders';
 
 @import 'base/reset';
-@import 'base/bgimg';
 
 @import 'layout/header';
+
+@import 'components/bgimg';
+@import 'components/nav';
