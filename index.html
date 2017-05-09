@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Yubin Mao</title>
+    <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js""></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -19,8 +20,18 @@
 <div class="search">
 	<input type="text" id="SearchField" required>
 	<label class="search-field" for="SearchField">SEARCH</label>
-	<label class="search-icon-label" for="SearchIcon"><i class="fa fa-search" aria-hidden="true"></i></label>
+	<label class="search-icon-label" for="SearchIcon"><i class="icon-search" aria-hidden="true"></i></label>
 	<input id="SearchIcon" type="checkbox"/>
+
+	<div class="search-modal">
+		<div class="search-modal-content">
+			<p class="search-modal-text">Search Temporarily Disabled</p>
+			<label for="SearchIcon"><i class="icon-cancel-circle" aria-hidden="true"></i></label>
+			<p class="search-modal-dw first">Device width > 1024px</p>
+			<p class="search-modal-dw second">600px > Device width > 1024px</p>
+			<p class="search-modal-dw third">Device width < 600px</p>
+		</div>
+	</div>
 </div>
 </nav>
 

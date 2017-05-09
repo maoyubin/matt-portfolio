@@ -1,13 +1,16 @@
-@import 'base/colors';
+
 
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
+@import 'base/colors';
 @import 'base/reset';
+@import 'base/animations';
 
 @import 'layout/header';
 
 @import 'components/bgimg';
 @import 'components/nav';
+@import 'components/modal';

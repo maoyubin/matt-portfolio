@@ -1,0 +1,62 @@
+#SearchIcon:checked  {
+  + .search-modal{
+      display: inherit;
+  }
+
+  + .search-modal .search-modal-content {
+      @include prefix((animation: zoomInDown 1s both), webkit);
+  }
+
+}
+
+.search-modal {
+  @extend %none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+
+.search-modal-content {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background-color: palette(persian-rose);
+    border-radius: 10px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-modal-content i {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.search-modal-content .search-modal-dw {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  color: blue;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-modal-dw.first {
+  display: block;
+}
+
+.search-modal-text {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  top: 50%;
+  transform: translateY(-50%);
+}
