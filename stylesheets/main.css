@@ -641,32 +641,6 @@ caption, th, td {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-.c-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-width: inherit;
-  font-size: 1rem;
-  color: white;
-  line-height: 90px;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
-  z-index: 1000;
-  transition: transform .5s ease-out; }
-  .c-header--isUp {
-    transform: translateY(-107%); }
-  .c-header .l-wrapper {
-    padding: 0 20px;
-    text-align: right; }
-    @media screen and (max-width: 767px) {
-      .c-header .l-wrapper {
-        text-align: left; } }
-
-.c-header,
-.site-menu > li:first-child {
-  height: 90px;
-  background-color: #3F51B3; }
-
 #port--about-sec {
   /* Begin ABOUT section */
   background: url("../img/about.jpg") no-repeat center center fixed;
