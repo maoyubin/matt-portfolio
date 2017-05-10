@@ -54,12 +54,6 @@ jQuery(document).ready(function() {
 
 	function hasScrolled() {
 		var st = $(this).scrollTop();
-
-
-		console.log('navbarHeight='+navbarHeight);
-		console.log('st='+st);
-		console.log('lastScrollTop='+lastScrollTop);
-		console.log('Math.abs(lastScrollTop - st)='+Math.abs(lastScrollTop - st));
 		// Make sure they scroll more than delta
 		if(Math.abs(lastScrollTop - st) <= delta)
 			return;
