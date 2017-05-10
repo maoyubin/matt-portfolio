@@ -803,8 +803,10 @@ caption, th, td {
 #SearchIcon:checked + .search-modal {
   display: inherit; }
 #SearchIcon:checked + .search-modal .search-modal-content {
-  -webkit-animation: zoomInDown 1s both;
-  animation: zoomInDown 1s both; }
+  /*@include prefix((animation: zoomInDown 1s both), webkit);*/
+  -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -moz-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 .search-modal {
   position: fixed;
@@ -817,13 +819,34 @@ caption, th, td {
 
 .search-modal-content {
   position: relative;
-  width: 500px;
-  height: 250px;
+  width: 350px;
+  height: 200px;
   background-color: #FF1493;
   border-radius: 10px;
   top: 20%;
-  left: 50%;
-  transform: translateX(-50%); }
+  left: 50%; }
+  .search-modal-content--width {
+    position: relative;
+    display: none;
+    font-size: 1em;
+    color: white;
+    top: 50%;
+    text-align: center; }
+  @media screen and (max-width: 319px) {
+    .search-modal-content--less_than_320 {
+      display: block; } }
+  @media screen and (min-width: 320px) and (max-width: 599px) {
+    .search-modal-content--320_600 {
+      display: block; } }
+  @media (min-width: 600px) and (max-width: 767px) {
+    .search-modal-content--600_768 {
+      display: block; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .search-modal-content--768_1024 {
+      display: block; } }
+  @media screen and (min-width: 1025px) {
+    .search-modal-content--greater_than_1024 {
+      display: block; } }
 
 .search-modal-content i {
   position: absolute;
@@ -833,7 +856,6 @@ caption, th, td {
   cursor: pointer; }
 
 .search-modal-content .search-modal-dw {
-  display: none;
   position: absolute;
   bottom: 20px;
   color: blue;
@@ -847,7 +869,17 @@ caption, th, td {
   position: relative;
   text-align: center;
   vertical-align: middle;
-  top: 50%;
-  transform: translateY(-50%); }
+  color: #FFEB3B;
+  top: 25%; }
+
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 10% 100%;
+    opacity: 0; }
+  100% {
+    transform: translate(-50%, 0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */

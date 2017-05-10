@@ -27,9 +27,31 @@
 		<div class="search-modal-content">
 			<p class="search-modal-text">Search Temporarily Disabled</p>
 			<label for="SearchIcon"><i class="icon-cancel-circle" aria-hidden="true"></i></label>
-			<p class="search-modal-dw first">Device width > 1024px</p>
-			<p class="search-modal-dw second">600px > Device width > 1024px</p>
-			<p class="search-modal-dw third">Device width < 600px</p>
+			<p class="c-modal__paragraph
+                          search-modal-content--width
+                          search-modal-content--less_than_320">
+                  device width &lt; 320px
+                </p>
+                <p class="c-modal__paragraph
+                          search-modal-content--width
+                          search-modal-content--320_600">
+                  320px &lt; device width &lt; 600px
+                </p>
+                <p class="c-modal__paragraph
+                          search-modal-content--width
+                          search-modal-content--600_768">
+                  600px &lt; device width &lt; 768px
+                </p>
+                <p class="c-modal__paragraph
+                          search-modal-content--width
+                          search-modal-content--768_1024">
+                  768px &lt; device width &lt; 1024px
+                </p>
+                <p class="c-modal__paragraph
+                          search-modal-content--width
+                          search-modal-content--greater_than_1024">
+                  device width &gt; 1024px
+                </p>
 		</div>
 	</div>
 </div>
