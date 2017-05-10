@@ -705,7 +705,8 @@ caption, th, td {
   width: 100%;
   height: 90px;
   border-bottom: 5px solid #3be9ff;
-  z-index: 1000; }
+  z-index: 1000;
+  transition: top .7s ease-in-out; }
 
 .menu-item {
   background: none;
@@ -799,6 +800,9 @@ caption, th, td {
   font-size: 2rem; }
   .name strong {
     color: rgba(0, 0, 0, 0.5); }
+
+.nav-up {
+  top: -85px; }
 
 #SearchIcon:checked + .search-modal {
   display: inherit; }

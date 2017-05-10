@@ -6,6 +6,7 @@
 	height: 90px;
 	border-bottom: 5px solid palette(robin-egg-blue,lighter);
 	z-index: 1000;
+	transition: top .7s ease-in-out;
 }
 
 .menu-item {
@@ -116,4 +117,8 @@
 	& strong{
 		color: palette(black,light);
 	}
+}
+
+.nav-up {
+    top: -85px;
 }
