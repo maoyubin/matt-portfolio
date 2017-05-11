@@ -73,4 +73,9 @@ jQuery(document).ready(function() {
 		lastScrollTop = st;
 	}
 
+	function activateSideMenuItem( position ) {
+
+        
+    }
+
 });
