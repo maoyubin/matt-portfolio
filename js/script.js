@@ -65,7 +65,7 @@ jQuery(document).ready(function() {
 			header.removeClass('nav-down').addClass('nav-up');
 		} else {
 			// Scroll Up
-			if(st + $(window).height() < $(document).height()) {
+			if(st < $(window).height()) {
 			    header.removeClass('nav-up').addClass('nav-down');
 			}
 		}
