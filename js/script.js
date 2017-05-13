@@ -23,7 +23,6 @@ jQuery(document).ready(function() {
 	$('a[href*="#port--"]').click(function() {
 	  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 	    var target = $(this.hash);
-	    console.log(target);
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 	    if (target.length) {
 	      $('html, body').animate({
@@ -34,12 +33,19 @@ jQuery(document).ready(function() {
 	  }
 	});
 
-	// Hide Header on on scroll down
+	var dom  = Portfolio.Utils.Dom;
 	var didScroll;
 	var lastScrollTop = 0;
 	var delta = 5;
 	var header = $('.main-menu');
 	var navbarHeight = header.outerHeight();
+
+	var DOMcache = {
+		header: $('.main-menu')[0],
+        sections:  $(".main-section")
+    };
+
+    var headerHeight = parseInt(window.getComputedStyle(DOMcache.header, null).height);
 
 	$(window).scroll(function(event){
 		didScroll = true;
@@ -47,10 +53,16 @@ jQuery(document).ready(function() {
 
 	setInterval(function() {
 		if (didScroll) {
-		hasScrolled();
-		didScroll = false;
+			hasScrolled();
+			didScroll = false;
 		}
-	}, 250);
+
+		var scrolledValue =  headerHeight + dom.getBody().scrollTop;
+        activateSideMenuItem(scrolledValue);
+	}, 300);
+
+	//var scrolledValue =  headerHeight + dom.getBody().scrollTop;
+	//activateSideMenuItem(scrolledValue);
 
 	function hasScrolled() {
 		var st = $(this).scrollTop();
@@ -73,9 +85,30 @@ jQuery(document).ready(function() {
 		lastScrollTop = st;
 	}
 
+	
+
+
 	function activateSideMenuItem( position ) {
 
-        
+        var coords = [].slice.call( DOMcache.sections ).map( function(section) {
+            return {
+                id: section.id,
+                coord: dom.getElemDistance(section)
+            };
+        }).filter(function( section ) {
+            return section.coord <= position;
+        });
+		
+        var indexId = coords[coords.length -1].id;
+
+        [].slice.call(DOMcache.sections).map( function(section) {
+        	
+        	if(indexId==section.id && !$(section).hasClass("icon-active")){
+        		$(dom.getSideMenuObj(indexId)).addClass("icon-active")
+        	}else if(indexId != section.id){
+        		$(dom.getSideMenuObj(section.id)).removeClass("icon-active");
+        	}
+        });
     }
 
 });
