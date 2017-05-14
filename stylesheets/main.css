@@ -706,15 +706,7 @@ footer {
   transition: all 0.2s; }
   @media screen and (max-width: 319px) {
     .menu-item a {
-      text-decoration: none;
-      display: inline-block;
-      width: 60px;
-      color: #3A4BA6;
-      font-size: 0.9rem;
-      background-color: transparent;
-      padding: 5px 5px 10px 5px;
-      margin: 0 0 -1px 0px;
-      transition: all 0.2s; } }
+      display: none; } }
 
 .menu-item a:hover {
   font-weight: 400;
@@ -793,7 +785,7 @@ footer {
     color: rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 319px) {
     .name {
-      left: 100px;
+      left: 50px;
       font-size: 1.5rem; }
       .name strong {
         color: #00618A; } }
