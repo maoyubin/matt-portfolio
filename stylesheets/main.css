@@ -704,7 +704,7 @@ footer {
   padding: 10px 10px 20px 10px;
   margin: 0 0 -1px 0px;
   transition: all 0.2s; }
-  @media screen and (max-width: 319px) {
+  @media screen and (max-width: 599px) {
     .menu-item a {
       display: none; } }
 
@@ -763,7 +763,7 @@ footer {
   @media screen and (max-width: 599px) {
     .search-field {
       margin-left: -55px;
-      font-size: 5px; } }
+      font-size: 10px; } }
 
 .search-icon-label i {
   font-size: 20px; }
@@ -783,6 +783,10 @@ footer {
   margin-left: -185px;
   font-size: 12px;
   transition: margin-top 0.5s, font-size 0.5s; }
+  @media screen and (max-width: 599px) {
+    #SearchField:focus + label, #SearchField:valid + label {
+      margin-top: -12px;
+      margin-left: -80px; } }
 
 .name {
   position: absolute;
