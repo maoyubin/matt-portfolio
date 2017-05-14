@@ -747,6 +747,9 @@ footer {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   color: #fff;
   width: 185px; }
+  @media screen and (max-width: 599px) {
+    #SearchField {
+      width: 50px; } }
 
 #SearchField:focus {
   outline: none; }
@@ -757,12 +760,19 @@ footer {
   font-size: 1rem;
   transition: margin-top 0.2s, font-size 0.2s;
   color: #acacac; }
+  @media screen and (max-width: 599px) {
+    .search-field {
+      margin-left: -55px;
+      font-size: 5px; } }
 
 .search-icon-label i {
   font-size: 20px; }
   .search-icon-label i:hover {
     color: #FFEB3B;
     cursor: pointer; }
+  @media screen and (max-width: 599px) {
+    .search-icon-label i {
+      font-size: 5px; } }
 
 #SearchIcon {
   display: none; }
@@ -916,7 +926,7 @@ nav ul, nav li {
   -webkit-transition: width .05s linear;
   transition: width .05s linear;
   z-index: 1000; }
-  @media screen and (max-width: 319px) {
+  @media screen and (max-width: 599px) {
     .side-main-menu {
       display: None; } }
 

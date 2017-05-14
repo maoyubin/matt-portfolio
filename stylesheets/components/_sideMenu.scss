@@ -45,7 +45,7 @@ nav ul,nav li {
 	transition: width .05s linear;
 	z-index: 1000;
 	
-    @include media('screen', '<320px') {
+    @include media('screen', '<600px') {
       display: None;
     }
 }

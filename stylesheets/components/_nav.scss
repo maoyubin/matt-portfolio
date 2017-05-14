@@ -76,6 +76,10 @@
 	border-bottom: 1px solid palette(black,light);
 	color: #fff;
 	width: 185px;
+
+	@include media('screen', '<600px') {
+      width: 50px;
+    }
 }
 
 #SearchField:focus {
@@ -88,6 +92,11 @@
 	font-size: 1rem;
 	transition: margin-top 0.2s, font-size 0.2s;
 	color: palette(gray,light);
+
+	@include media('screen', '<600px') {
+      margin-left: -55px;
+      font-size: 5px;
+    }
 }
 
 .search-icon-label i {
@@ -96,6 +105,10 @@
         color: palette(gorse);
         cursor: pointer;
 	}
+
+	@include media('screen', '<600px') {
+      font-size: 5px;
+    }
 }
 
 #SearchIcon {
