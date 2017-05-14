@@ -772,7 +772,7 @@ footer {
     cursor: pointer; }
   @media screen and (max-width: 599px) {
     .search-icon-label i {
-      font-size: 5px; } }
+      font-size: 15px; } }
 
 #SearchIcon {
   display: none; }
