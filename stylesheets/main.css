@@ -641,6 +641,16 @@ caption, th, td {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
+.section-text {
+  position: relative;
+  padding-top: 10%; }
+
+.section-text p {
+  width: 60%;
+  margin: 25px auto 0;
+  font-size: 1.7rem;
+  text-align: center; }
+
 footer {
   padding: 1.5rem;
   background: #bde0ff;
@@ -669,14 +679,6 @@ footer {
   background-size: cover;
   text-align: center;
   height: 100vh; }
-
-#port--about-sec {
-  font-family: Tangerine, Georgia;
-  font-size: 40px; }
-
-#port--project-sec {
-  font-family: "Oswald", sans-serif;
-  font-size: 40px; }
 
 .main-menu {
   background-color: #bde0ff;
@@ -1001,5 +1003,59 @@ a:hover, a:focus {
 
 .icon-active {
   background-color: #3cace2; }
+
+/* ======= Back to Top ======== */
+@media screen and (min-width: 600px) {
+  .back-to-top {
+    display: table-cell;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 20px;
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(112, 239, 114, 0.8);
+    font-size: 12px;
+    height: 30px;
+    width: 80px;
+    display: none; }
+
+  .back-to-top:hover {
+    background-color: rgba(112, 239, 114, 0.5); } }
+#port--about-sec {
+  font-family: Cursive;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5); }
+
+.about-title {
+  position: relative;
+  top: 17%;
+  left: 55%;
+  font-family: Cursive;
+  font-size: 2.8rem;
+  color: #CDDC39;
+  -webkit-animation: zoomInRight 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -moz-animation: zoomInRight 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: zoomInRight 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+.zoomInRight {
+  animation-name: zoomInRight; }
+
+#port--project-sec {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,6 +8,7 @@
 @import 'base/colors';
 @import 'base/reset';
 @import 'base/animations';
+@import 'base/section';
 
 @import 'layout/header';
 @import 'layout/footer';
@@ -16,3 +17,5 @@
 @import 'components/nav';
 @import 'components/modal';
 @import 'components/sideMenu';
+@import 'components/about';
+@import 'components/project';

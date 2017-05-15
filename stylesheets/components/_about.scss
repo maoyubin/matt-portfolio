@@ -1,0 +1,35 @@
+#port--about-sec {
+    font-family: $aboutFont;
+    font-weight: bold;
+    color: palette(black,light);
+}
+
+.about-title{
+	position: relative;
+	top: 17%;
+	left: 55%;
+	font-family: $aboutFont;
+	font-size: 2.8rem;
+	color: palette(pear);
+	-webkit-animation: zoomInRight 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: zoomInRight 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: zoomInRight 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInRight {
+  animation-name: zoomInRight;
+}

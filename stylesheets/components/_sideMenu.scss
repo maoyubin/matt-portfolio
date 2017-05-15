@@ -128,3 +128,29 @@ a:hover,a:focus {
 .icon-active {
 	background-color: palette(curious-blue,light);
 }
+
+/* ======= Back to Top ======== */
+@media screen and (min-width: 600px){
+
+  .back-to-top {
+    display: table-cell;
+    text-align: center;
+    line-height: 30px;
+	vertical-align: middle;
+	font-size:20px;
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(112, 239, 114, 0.80);
+    font-size: 12px;
+    height: 30px;
+    width: 80px;
+    display: none;
+  }
+  .back-to-top:hover {  
+    background-color: rgba(112, 239, 114, 0.50);
+  }
+} 
