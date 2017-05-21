@@ -83,10 +83,7 @@ jQuery(document).ready(function() {
 		}
 
 		lastScrollTop = st;
-	}
-
-	
-
+	};
 
 	function activateSideMenuItem( position ) {
 
@@ -101,6 +98,7 @@ jQuery(document).ready(function() {
 		
         var indexId = coords[coords.length -1].id;
 
+
         [].slice.call(DOMcache.sections).map( function(section) {
         	
         	if(indexId==section.id && !$(section).hasClass("icon-active")){
@@ -109,6 +107,7 @@ jQuery(document).ready(function() {
         		$(dom.getSideMenuObj(section.id)).removeClass("icon-active");
         	}
         });
-    }
+    };
+
 
 });

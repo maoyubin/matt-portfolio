@@ -9,9 +9,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js""></script>
     <script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/portfolio.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
     <link rel="shortcut icon" href="icons/summer.ico">
 </head>
-<body>
+<body  style='overflow:-Scroll;overflow-x:hidden'>
 <nav class="main-menu">
 <span class="name">YuBin <strong>Mao</strong></span>
 <ul class="menu-items">
@@ -69,8 +70,7 @@
 	</div>
 </section>
 
-<!--PROJECTS SECTION-->
-<section id='port--project-sec'>
+<section id='port--project-sec' class="main-section">
 	<div class='section-title section-title-position-p'>
 	 	<p>[Projects]</p>
 	</div>
@@ -97,400 +97,81 @@
 		</div>
 
 		<div class="projects-tabs">
-			<!-- Project 1 -->
-			<div class="projects-tabs-content">
-				<!-- Project Carousel -->
-			  	<div class="carousel">
-				    <input type="radio" name="slides-pj1" id="pj1-slide1" checked>
-				    <input type="radio" name="slides-pj1" id="pj1-slide2">
-				    <input type="radio" name="slides-pj1" id="pj1-slide3">
+			    <input type="radio" name="slides-pj1" id="pj1-slide1" checked>
+			    <input type="radio" name="slides-pj1" id="pj1-slide2">
+			    <input type="radio" name="slides-pj1" id="pj1-slide3">
 
-				    <div class="carousel-nav-arrows">
-						<label for="pj1-slide3" class="carousel-nav1" aria-label="previous slide">
-							<i class="icon-left-open" aria-hidden="true"></i>
-						</label>
-						<label for="pj1-slide2" class="carousel-angle-right carousel-nav1" aria-label="next slide">
-							<i class="icon-right-open" aria-hidden="true"></i>
-						</label>
+				<label class="left-arrow"><i class="icon-left-open" aria-hidden="true"></i></label>
+				<label class="right-arrow"><i class="icon-right-open" aria-hidden="true"></i></label>
+			    
+			    <div class="carousel-slides-1">
+			      <img src="icons/btn.png" class="carousel-slide-1">
+			      <img src="icons/btn_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
 
-						<label for="pj1-slide1" class="carousel-nav2" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj1-slide3" class="carousel-angle-right carousel-nav2" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
+			    <div class="carousel-slides-2">
+			      <img src="icons/pro.png" class="carousel-slide-1">
+			      <img src="icons/pro_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
 
-						<label for="pj1-slide2" class="carousel-nav3" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj1-slide1" class="carousel-angle-right carousel-nav3" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-				    </div>
-				    
-				    <div class="carousel-slides">
-				      <img src="icons/btn.png" class="carousel-slide-1">
-				      <img src="icons/btn_dyn.gif" class="carousel-slide-2">
-				      <div class="carousel-slide-3 carousel-slide-live">
-				        Live demo goes here
-				      </div>
-				    </div>
+			    <div class="carousel-slides-3">
+			      <img src="icons/form.png" class="carousel-slide-1">
+			      <img src="icons/form_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
 
-				    <div class="carousel-nav-dots">
-				      <label for="pj1-slide1" class="carousel-nav-dot1" aria-label="slide one">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj1-slide2" class="carousel-nav-dot2" aria-label="slide two">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj1-slide3" class="carousel-nav-dot3" aria-label="slide three">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				    </div>
-			  	</div>
+			    <div class="carousel-slides-4">
+			      <img src="icons/cal.png" class="carousel-slide-1">
+			      <img src="icons/cal_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
+
+			    <div class="carousel-slides-5">
+			      <img src="icons/buz.png" class="carousel-slide-1">
+			      <img src="icons/buz_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
+
+			    <div class="carousel-slides-6">
+			      <img src="icons/ass.png" class="carousel-slide-1">
+			      <img src="icons/ass_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
+
+			    <div class="carousel-nav-dots">
+					<label for="carousel__radio-1"></label>
+					<label for="carousel__radio-2"></label>
+					<label for="carousel__radio-3"></label>
+			    </div>
 
 				<div class="projects-tabs-content-intro">
 					<h4>Technologies: HTML and CSS</h4>
 					<p>Simple and reusable button components.</p>
 					<a href="https://maoyubin.github.io/components/buttons/index.html" target="_blank">
-						<span class="fa fa-link" aria-hidden="true"></span>View Demo</a>
+						<i class="icon-heart" aria-hidden="true"></i>View Demo</a>
 					<a href="https://github.com/maoyubin/maoyubin.github.io/tree/master/components/buttons" target="_blank">
-						<span class="fa fa-github" aria-hidden="true"></span>
+						<i class="icon-github-circled" aria-hidden="true"></i>
 					 	View Source on GitHub
 					</a>
 				</div>
-			</div>
-			<!-- End Project 1 -->
-
-			<!-- Project 2 -->
-			<div class="projects-tabs-content">
-				<!-- Project Carousel -->
-			  	<div class="carousel">
-				    <input type="radio" name="slides-pj2" id="pj2-slide1" checked>
-				    <input type="radio" name="slides-pj2" id="pj2-slide2">
-				    <input type="radio" name="slides-pj2" id="pj2-slide3">
-
-				    <div class="carousel-nav-arrows">
-						<label for="pj2-slide3" class="carousel-nav1" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj2-slide2" class="carousel-angle-right carousel-nav1" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj2-slide1" class="carousel-nav2" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj2-slide3" class="carousel-angle-right carousel-nav2" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj2-slide2" class="carousel-nav3" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj2-slide1" class="carousel-angle-right carousel-nav3" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-				    </div>
-				    
-				    <div class="carousel-slides">
-				      <img src="icons/pro.png" class="carousel-slide-1">
-				      <img src="icons/pro_dyn.gif" class="carousel-slide-2">
-				      <div class="carousel-slide-3 carousel-slide-live">
-				        Live demo goes here
-				      </div>
-				    </div>
-
-				    <div class="carousel-nav-dots">
-				      <label for="pj2-slide1" class="carousel-nav-dot1" aria-label="slide one">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj2-slide2" class="carousel-nav-dot2" aria-label="slide two">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj2-slide3" class="carousel-nav-dot3" aria-label="slide three">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				    </div>
-			  	</div>
-
-				<div class="projects-tabs-content-intro">
-					<h4>Technologies: HTML and CSS</h4>
-					<p>Simple and reusable button components.</p>
-					<a href="https://maoyubin.github.io/product-listing/" target="_blank">
-						<span class="fa fa-link" aria-hidden="true"></span>View Demo</a>
-					<a href="https://github.com/maoyubin/product-listing" target="_blank">
-						<span class="fa fa-github" aria-hidden="true"></span>
-					 	View Source on GitHub
-					</a>
-				</div>
-			</div>
-			<!-- End Project 2 -->
-
-			<!-- Project 3 -->
-			<div class="projects-tabs-content">
-				<!-- Project Carousel -->
-			  	<div class="carousel">
-				    <input type="radio" name="slides-pj3" id="pj3-slide1" checked>
-				    <input type="radio" name="slides-pj3" id="pj3-slide2">
-				    <input type="radio" name="slides-pj3" id="pj3-slide3">
-
-				    <div class="carousel-nav-arrows">
-						<label for="pj3-slide3" class="carousel-nav1" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj3-slide2" class="carousel-angle-right carousel-nav1" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj3-slide1" class="carousel-nav2" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj3-slide3" class="carousel-angle-right carousel-nav2" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj3-slide2" class="carousel-nav3" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj3-slide1" class="carousel-angle-right carousel-nav3" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-				    </div>
-				    
-				    <div class="carousel-slides">
-				      <img src="icons/form.png" class="carousel-slide-1">
-				      <img src="icons/form_dyn.gif" class="carousel-slide-2">
-				      <div class="carousel-slide-3 carousel-slide-live">
-				        Live demo goes here
-				      </div>
-				    </div>
-
-				    <div class="carousel-nav-dots">
-				      <label for="pj3-slide1" class="carousel-nav-dot1" aria-label="slide one">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj3-slide2" class="carousel-nav-dot2" aria-label="slide two">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj3-slide3" class="carousel-nav-dot3" aria-label="slide three">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				    </div>
-			  	</div>
-
-				<div class="projects-tabs-content-intro">
-					<h4>Technologies: HTML and CSS</h4>
-					<p>Simple and reusable button components.</p>
-					<a href="https://maoyubin.github.io/md-forms/" target="_blank">
-						<span class="fa fa-link" aria-hidden="true"></span>View Demo</a>
-					<a href="https://github.com/maoyubin/md-forms" target="_blank">
-						<span class="fa fa-github" aria-hidden="true"></span>
-					 	View Source on GitHub
-					</a>
-				</div>
-			</div>
-			<!-- End Project 3 -->
-
-			<!-- Project 4 -->
-			<div class="projects-tabs-content">
-				<!-- Project Carousel -->
-			  	<div class="carousel">
-				    <input type="radio" name="slides-pj4" id="pj4-slide1" checked>
-				    <input type="radio" name="slides-pj4" id="pj4-slide2">
-				    <input type="radio" name="slides-pj4" id="pj4-slide3">
-
-				    <div class="carousel-nav-arrows">
-						<label for="pj4-slide3" class="carousel-nav1" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj4-slide2" class="carousel-angle-right carousel-nav1" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj4-slide1" class="carousel-nav2" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj4-slide3" class="carousel-angle-right carousel-nav2" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj4-slide2" class="carousel-nav3" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj4-slide1" class="carousel-angle-right carousel-nav3" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-				    </div>
-				    
-				    <div class="carousel-slides">
-				      <img src="icons/cal.png" class="carousel-slide-1">
-				      <img src="icons/cal_dyn.gif" class="carousel-slide-2">
-				      <div class="carousel-slide-3 carousel-slide-live">
-				        Live demo goes here
-				      </div>
-				    </div>
-
-				    <div class="carousel-nav-dots">
-				      <label for="pj4-slide1" class="carousel-nav-dot1" aria-label="slide one">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj4-slide2" class="carousel-nav-dot2" aria-label="slide two">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj4-slide3" class="carousel-nav-dot3" aria-label="slide three">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				    </div>
-			  	</div>
-
-				<div class="projects-tabs-content-intro">
-					<h4>Technologies: HTML and CSS</h4>
-					<p>Simple and reusable button components.</p>
-					<a href="https://maoyubin.github.io/calculator/" target="_blank">
-						<span class="fa fa-link" aria-hidden="true"></span>View Demo</a>
-					<a href="https://github.com/maoyubin/calculator" target="_blank">
-						<span class="fa fa-github" aria-hidden="true"></span>
-					 	View Source on GitHub
-					</a>
-				</div>
-			</div>
-			<!-- End Project 4 -->
-
-			<!-- Project 5 -->
-			<div class="projects-tabs-content">
-				<!-- Project Carousel -->
-			  	<div class="carousel">
-				    <input type="radio" name="slides-pj5" id="pj5-slide1" checked>
-				    <input type="radio" name="slides-pj5" id="pj5-slide2">
-				    <input type="radio" name="slides-pj5" id="pj5-slide3">
-
-				    <div class="carousel-nav-arrows">
-						<label for="pj5-slide3" class="carousel-nav1" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj5-slide2" class="carousel-angle-right carousel-nav1" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj5-slide1" class="carousel-nav2" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj5-slide3" class="carousel-angle-right carousel-nav2" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj5-slide2" class="carousel-nav3" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj5-slide1" class="carousel-angle-right carousel-nav3" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-				    </div>
-				    
-				    <div class="carousel-slides">
-				      <img src="icons/buz.png" class="carousel-slide-1">
-				      <img src="icons/buz_dyn.gif" class="carousel-slide-2">
-				      <div class="carousel-slide-3 carousel-slide-live">
-				        Live demo goes here
-				      </div>
-				    </div>
-
-				    <div class="carousel-nav-dots">
-				      <label for="pj5-slide1" class="carousel-nav-dot1" aria-label="slide one">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj5-slide2" class="carousel-nav-dot2" aria-label="slide two">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj5-slide3" class="carousel-nav-dot3" aria-label="slide three">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				    </div>
-			  	</div>
-
-				<div class="projects-tabs-content-intro">
-					<h4>Technologies: HTML and CSS</h4>
-					<p>Simple and reusable button components.</p>
-					<a href="https://maoyubin.github.io/css_example/business-card-component/" target="_blank">
-						<span class="fa fa-link" aria-hidden="true"></span>View Demo</a>
-					<a href="https://github.com/maoyubin/css_example" target="_blank">
-						<span class="fa fa-github" aria-hidden="true"></span>
-					 	View Source on GitHub
-					</a>
-				</div>
-			</div>
-			<!-- End Project 5 -->
-
-			<!-- Project 6 -->
-			<div class="projects-tabs-content">
-				<!-- Project Carousel -->
-			  	<div class="carousel">
-				    <input type="radio" name="slides-pj6" id="pj6-slide1" checked>
-				    <input type="radio" name="slides-pj6" id="pj6-slide2">
-				    <input type="radio" name="slides-pj6" id="pj6-slide3">
-
-				    <div class="carousel-nav-arrows">
-						<label for="pj6-slide3" class="carousel-nav1" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj6-slide2" class="carousel-angle-right carousel-nav1" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj6-slide1" class="carousel-nav2" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj6-slide3" class="carousel-angle-right carousel-nav2" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-
-						<label for="pj6-slide2" class="carousel-nav3" aria-label="previous slide">
-							<span class="fa fa-angle-left fa-4x"></span>
-						</label>
-						<label for="pj6-slide1" class="carousel-angle-right carousel-nav3" aria-label="next slide">
-							<span class="fa fa-angle-right fa-4x"></span>
-						</label>
-				    </div>
-				    
-				    <div class="carousel-slides">
-				      <img src="icons/ass.png" class="carousel-slide-1">
-				      <img src="icons/ass_dyn.gif" class="carousel-slide-2">
-				      <div class="carousel-slide-3 carousel-slide-live">
-				        Live demo goes here
-				      </div>
-				    </div>
-
-				    <div class="carousel-nav-dots">
-				      <label for="pj6-slide1" class="carousel-nav-dot1" aria-label="slide one">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj6-slide2" class="carousel-nav-dot2" aria-label="slide two">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				      <label for="pj6-slide3" class="carousel-nav-dot3" aria-label="slide three">
-				        <span class="fa fa-circle" aria-hidden="true"></span>
-				      </label>
-				    </div>
-			  	</div>
-
-				<div class="projects-tabs-content-intro">
-					<h4>Technologies: HTML and CSS</h4>
-					<p>Simple and reusable button components.</p>
-					<a href="http://codepen.io/maoyubin/pen/pNXEKO" target="_blank">
-						<span class="fa fa-link" aria-hidden="true"></span>View Demo</a>
-					<a href="http://codepen.io/maoyubin/pen/pNXEKO" target="_blank">
-						<span class="fa fa-github" aria-hidden="true"></span>
-					 	View Source on GitHub
-					</a>
-				</div>
-			</div>
-			<!-- End Project 6  -->
-
+			<!-- End Projects -->
 		</div>
 
 	</div>
-
 </section>
 
 
