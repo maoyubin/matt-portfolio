@@ -663,7 +663,8 @@ caption, th, td {
 .section-des p {
   margin: 15px auto 10px;
   font-size: 1rem;
-  text-align: center; }
+  text-align: center;
+  width: 60%; }
 
 footer {
   padding: 1.5rem;
@@ -685,8 +686,7 @@ footer {
 
 #port--skills-sec {
   background: url("../img/skills.jpg") no-repeat fixed;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
 
 #port--contact-sec {
   background: url("../img/contact.jpg") no-repeat fixed;
@@ -1238,5 +1238,195 @@ div[class^="carousel-slides-"] {
 
 .projects-tabs-content-intro a:hover {
   color: #4AB29B; }
+
+/* Skill */
+.skills-wrapper {
+  width: 770px;
+  height: 800px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px; }
+
+.skill-meters {
+  position: relative;
+  padding-top: 5px; }
+
+.fe-meter {
+  width: 76%;
+  background-color: #FB5E5D;
+  color: #fff;
+  padding: 5px 5px 5px 15px;
+  float: left;
+  text-align: left;
+  border-radius: 5px 0px 0 5px; }
+
+.be-meter {
+  width: 24%;
+  background-color: #4A6FEB;
+  color: #fff;
+  text-align: right;
+  padding: 5px 15px 5px 5px;
+  float: right;
+  border-radius: 0 5px 5px 0; }
+
+.bar-graph_container {
+  width: 360px;
+  height: 250px;
+  border-bottom: 1px solid #bbb; }
+
+.fe-graph {
+  position: relative;
+  left: 0;
+  top: 30px; }
+
+.be-graph {
+  position: relative;
+  left: 20px;
+  top: 30px; }
+
+.display-inline {
+  display: inline-block; }
+
+.display-block {
+  display: block;
+  margin: auto auto; }
+
+.graph-title {
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; }
+
+.fe-graph > .graph-title {
+  color: #FB5E5D; }
+
+.be-graph > .graph-title {
+  color: #4A6FEB; }
+
+.bar-graph_levels {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 160px;
+  top: -90px;
+  text-align: right; }
+
+.bar-graph_level {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px; }
+
+.bar-graph_bars {
+  display: inline-block;
+  position: relative;
+  left: 70px;
+  top: -18px;
+  transform: rotate(-90deg); }
+
+.bar-graph_bars-b {
+  display: inline-block;
+  position: relative;
+  left: 110px;
+  top: 33px;
+  transform: rotate(-90deg); }
+
+.bar-graph_bar {
+  position: relative;
+  height: 35px;
+  border-radius: 0 3px 3px 0;
+  margin-bottom: 22px;
+  -webkit-animation: scale-out-ver-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
+  -moz-animation: scale-out-ver-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
+  animation: scale-out-ver-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both; }
+
+@keyframes scale-out-ver-bottom {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 0% 100%;
+    opacity: 1; }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+    opacity: 1; } }
+.level-1 {
+  width: 40px; }
+
+.level-2 {
+  width: 85px; }
+
+.level-3 {
+  width: 133px; }
+
+.level-4 {
+  width: 185px; }
+
+.pink {
+  background-color: #FA8CB0; }
+
+.orange {
+  background-color: #FFAD41; }
+
+.blue {
+  background-color: #38BAF0; }
+
+.green {
+  background-color: #69D12B; }
+
+.yellow {
+  background-color: #EFE210; }
+
+.bar-graph_items {
+  position: relative;
+  font-size: 14px;
+  left: 220px;
+  top: -5px; }
+
+.bar-graph_item {
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-left: -148px;
+  width: 200px;
+  text-align: left; }
+
+.tooltip {
+  position: absolute;
+  right: -300px;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotate(90deg);
+  text-align: center;
+  width: 150px;
+  z-index: 100;
+  transition: right 0.2s, opacity 0.2s;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300; }
+
+.tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid rgba(0, 0, 0, 0.8) 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  width: 0; }
+
+.bar-graph_bar:hover > .tooltip {
+  opacity: 1;
+  right: -50px;
+  transform: rotate(90deg);
+  transition: right 0.2s, opacity 0.2s;
+  visibility: visible; }
+
+/*End Skill*/
 
 /*# sourceMappingURL=main.css.map */
