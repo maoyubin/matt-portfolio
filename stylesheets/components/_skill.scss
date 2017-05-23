@@ -216,9 +216,11 @@
 
 .bar-graph_bar:hover > .tooltip {
   opacity: 1;
-  right: -50px;
+  right: -130px;
+  top: -15px;
   transform: rotate(90deg);
   transition: right 0.2s, opacity 0.2s;
+  margin: 0 -2px;
   visibility: visible;
 }
 
