@@ -196,36 +196,38 @@ div[class^="carousel-slides-"] {
 }
 
 .projects-tabs-content-intro {
-  position: relative;
+  position: absolute;
+  width: 310px;
+  top:15px;
+  right: 0;
   border-radius: 3%;
-  background-color: palette(negroni);
+  color: white;
+  background-color: rgb(175, 124, 124);
   margin-bottom: 20px;
 }
 
-.projects-tabs-content-intro h4 {
-  padding: 10px;
-}
-
-.projects-tabs-content-intro p {
-  padding-left: 20px;
-  font-size: 0.9em;
-  line-height: 1.2em;
+.projects-tabs-content-intro div {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: .8em;
+  line-height: .8em;
 }
 
 .projects-tabs-content-intro a {
+  padding-left: 10px;
   display: inline-block;
-  padding: 20px;
-  color: rgba(0,0,0,0.5);
-  font-size: 0.9em;
+  color: white;
+  font-size: 0.5em;
+  padding-bottom: 5px;
   -webkit-transition: color .3s;
   -moz-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s;
+  & i {
+    color: black;
+  }
 }
 
-.projects-tabs-content-intro a:first-of-type {
-  margin-right: 50px;
-}
 
 .projects-tabs-content-intro a:hover {
   color: #4AB29B;
