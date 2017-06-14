@@ -1,11 +1,15 @@
 .carousel-nav-dots {
-  position: relative;
-  padding: 10px;
+  position: absolute;
+  top: 340px;
+  width: 100%;
   text-align: center;
+  clear: both;
+
 }
 
 .carousel-nav-dots label{
     cursor: pointer;
+    background-color: green;
     border-radius: 50%;
     display: inline-block;
     margin: 0 10px;
@@ -51,36 +55,49 @@
   display: flex;
 }
 
-.section-content-projects input {
+input[type="radio"] {
   display: none;
 }
 
 .projects-nav {
   width: 25%;
-  overflow-y: auto;
+  height: 360px;
+  background-color: green;
 }
 
 .projects-tabs {
+  position: relative;
   width: 75%;
+  height: 360px;
+  overflow: hidden;
 }
 
+
 div[class^="carousel-slides-"] {
-  position: relative;
-  padding: 10px;
+  position: absolute;
   background-color: #FAFAFA;
-  width: 550px;
-  left:10%;
+  width: 300%;
+  margin: 15px 5%;
+  height: 320px;
+  display: none;
+  transition: all .6s linear;
+
   & img {
-    position: relative;
-    padding: 10px;
-    width: 450px;
-    height: 400px;
+    float: left;
+    width: 33.33%;
+    height: 320px;
+  }
+  & .carousel-slide-3 {
+    float: left;
+    width: 33.33%;
+    height: 320px;;
   }
 }
 
 .projects-nav label {
   display: block;
   padding: 15px;
+  height: 60px;
   margin: 0;
   color: rgba(0,0,0,0.6);
   cursor: pointer;
@@ -99,49 +116,26 @@ div[class^="carousel-slides-"] {
 }
 
 
-/* add more projects here */
 .section-content-projects input:nth-of-type(1):checked ~ .projects-nav label:nth-of-type(1),
 .section-content-projects input:nth-of-type(2):checked ~ .projects-nav label:nth-of-type(2),
 .section-content-projects input:nth-of-type(3):checked ~ .projects-nav label:nth-of-type(3),
 .section-content-projects input:nth-of-type(4):checked ~ .projects-nav label:nth-of-type(4),
 .section-content-projects input:nth-of-type(5):checked ~ .projects-nav label:nth-of-type(5),
-.section-content-projects input:nth-of-type(6):checked ~ .projects-nav label:nth-of-type(6),
-.section-content-projects input:nth-of-type(7):checked ~ .projects-nav label:nth-of-type(7),
-.section-content-projects input:nth-of-type(8):checked ~ .projects-nav label:nth-of-type(8) {
+.section-content-projects input:nth-of-type(6):checked ~ .projects-nav label:nth-of-type(6) {
   background-color: rgba(238,238,238,0.8);
   color: #00897B;
   border-left: 3px solid #00897B;
 }
 
-
-.left-arrow {
-  float: left;
-  cursor: pointer;
-  -webkit-transition: color .3s;
-  -moz-transition: color .3s;
-  -o-transition: color .3s;
-  transition: color .3s;
-  color: palette(black,light);
-  margin-left: 5%;
-  vertical-align:middle;
-  line-height: 400px;
+.section-content-projects input:nth-of-type(1):checked ~ .projects-tabs .carousel-slides-1,
+.section-content-projects input:nth-of-type(2):checked ~ .projects-tabs .carousel-slides-2,
+.section-content-projects input:nth-of-type(3):checked ~ .projects-tabs .carousel-slides-3,
+.section-content-projects input:nth-of-type(4):checked ~ .projects-tabs .carousel-slides-4,
+.section-content-projects input:nth-of-type(5):checked ~ .projects-tabs .carousel-slides-5,
+.section-content-projects input:nth-of-type(6):checked ~ .projects-tabs .carousel-slides-6 {
+    display: block;
 }
 
-.right-arrow {
-  float: right;
-  cursor: pointer;
-  -webkit-transition: color .3s;
-  -moz-transition: color .3s;
-  -o-transition: color .3s;
-  transition: color .3s;
-  color: palette(black,light);
-  vertical-align:middle;
-  line-height: 400px;
-}
-
-.left-arrow:hover, .right-arrow:hover {
-  color: #4AB29B;
-}
 
 
 .carousel input:nth-of-type(1):checked ~ .carousel-nav-arrows .carousel-nav1,
@@ -149,21 +143,22 @@ div[class^="carousel-slides-"] {
 .carousel input:nth-of-type(3):checked ~ .carousel-nav-arrows .carousel-nav3,
 .carousel input:nth-of-type(4):checked ~ .carousel-nav-arrows .carousel-nav4 {
   display: block;
-}
+}  
 
-.carousel input:nth-of-type(1):checked ~ .carousel-nav-dots label:nth-of-type(1),
-.carousel input:nth-of-type(2):checked ~ .carousel-nav-dots label:nth-of-type(2),
-.carousel input:nth-of-type(3):checked ~ .carousel-nav-dots label:nth-of-type(3),
-.carousel input:nth-of-type(4):checked ~ .carousel-nav-dots label:nth-of-type(4){
+#slide1-pj1:checked ~ .carousel-slides-1 { margin-left: 0; }
+#slide2-pj1:checked ~ .carousel-slides-1 { margin-left:-100%; }
+#slide3-pj1:checked ~ .carousel-slides-1 { margin-left:-200%; }
+
+input[id^="slide1-"]:checked ~ .carousel-nav-dots label[id^="slide1-"],
+input[id^="slide2-"]:checked ~ .carousel-nav-dots label[id^="slide2-"],
+input[id^="slide3-"]:checked ~ .carousel-nav-dots label[id^="slide3-"] {
   color: #4AB29B;
+  background-color: gold;
 }
 
-.carousel input:nth-of-type(1):checked ~ .carousel-slides .carousel-slide-1,
-.carousel input:nth-of-type(2):checked ~ .carousel-slides .carousel-slide-2,
-.carousel input:nth-of-type(3):checked ~ .carousel-slides .carousel-slide-3,
-.carousel input:nth-of-type(4):checked ~ .carousel-slides .carousel-slide-4 {
-  opacity: 1;
-}
+
+
+.carousel-slides-1 { height:900px;background-color: red;}
 
 .projects-tabs-content-intro {
   position: relative;
@@ -198,5 +193,35 @@ div[class^="carousel-slides-"] {
 }
 
 .projects-tabs-content-intro a:hover {
+  color: #4AB29B;
+}
+
+
+.left-arrow {
+  float: left;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+  color: palette(black,light);
+  margin-left: 5%;
+  vertical-align:middle;
+  line-height: 400px;
+}
+
+.right-arrow {
+  float: right;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+  color: palette(black,light);
+  vertical-align:middle;
+  line-height: 400px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
   color: #4AB29B;
 }

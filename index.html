@@ -9,7 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js""></script>
     <script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/portfolio.js"></script>
-	<script type="text/javascript" src="js/project.js"></script>
     <link rel="shortcut icon" href="icons/summer.ico">
 </head>
 <body  style='overflow:-Scroll;overflow-x:hidden'>
@@ -97,19 +96,19 @@
 		</div>
 
 		<div class="projects-tabs">
-			    <input type="radio" name="slides-pj1" id="pj1-slide1" checked>
-			    <input type="radio" name="slides-pj1" id="pj1-slide2">
-			    <input type="radio" name="slides-pj1" id="pj1-slide3">
-
-				<label class="left-arrow"><i class="icon-left-open" aria-hidden="true"></i></label>
-				<label class="right-arrow"><i class="icon-right-open" aria-hidden="true"></i></label>
-			    
+				
+				<input type="radio" name="abc" id="slide1-pj1" checked>
+				<input type="radio" name="abc" id="slide2-pj1">
+				<input type="radio" name="abc" id="slide3-pj1">
 			    <div class="carousel-slides-1">
-			      <img src="icons/btn.png" class="carousel-slide-1">
-			      <img src="icons/btn_dyn.gif" class="carousel-slide-2">
-			      <div class="carousel-slide-3 carousel-slide-live">
-			        Live demo goes here
-			      </div>
+					<img class="carousel-slide-1" src="icons/btn.png" >
+					<img class="carousel-slide-2" src="icons/btn_dyn.gif" >
+					<div class="carousel-slide-3 carousel-slide-live">Live demo goes here</div>
+			    </div>
+			    <div class="carousel-nav-dots">
+					<label for="slide1-pj1" id="slide1-label"></label>
+					<label for="slide2-pj1" id="slide2-label"></label>
+					<label for="slide3-pj1" id="slide3-label"></label>
 			    </div>
 
 			    <div class="carousel-slides-2">
@@ -152,13 +151,7 @@
 			      </div>
 			    </div>
 
-			    <div class="carousel-nav-dots">
-					<label for="carousel__radio-1"></label>
-					<label for="carousel__radio-2"></label>
-					<label for="carousel__radio-3"></label>
-			    </div>
-
-				<div class="projects-tabs-content-intro">
+				<!--<div class="projects-tabs-content-intro">
 					<h4>Technologies: HTML and CSS</h4>
 					<p>Simple and reusable button components.</p>
 					<a href="https://maoyubin.github.io/components/buttons/index.html" target="_blank">
@@ -167,10 +160,9 @@
 						<i class="icon-github-circled" aria-hidden="true"></i>
 					 	View Source on GitHub
 					</a>
-				</div>
+				</div>-->
 			<!-- End Projects -->
 		</div>
-
 	</div>
 </section>
 
