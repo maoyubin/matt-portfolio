@@ -695,7 +695,7 @@ footer {
   height: 100vh; }
 
 .main-menu {
-  background-color: #bde0ff;
+  background: -webkit-linear-gradient(left, #5ba5ea, #f26f6f);
   position: fixed;
   top: 0;
   width: 100%;
@@ -1122,7 +1122,7 @@ input[type="radio"] {
 .projects-nav {
   width: 25%;
   height: 360px;
-  background-color: green; }
+  background: -webkit-linear-gradient(top, red, yellow); }
 
 .projects-tabs {
   position: relative;
@@ -1178,7 +1178,7 @@ div[class^="carousel-slides-"] {
 .section-content-projects input:nth-of-type(4):checked ~ .projects-nav label:nth-of-type(4),
 .section-content-projects input:nth-of-type(5):checked ~ .projects-nav label:nth-of-type(5),
 .section-content-projects input:nth-of-type(6):checked ~ .projects-nav label:nth-of-type(6) {
-  background-color: rgba(238, 238, 238, 0.6);
+  background-color: rgba(0, 255, 76, 0.6);
   color: #00897B;
   border-left: 3px solid #00897B; }
 

@@ -3,29 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Yubin Mao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js""></script>
-    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/portfolio.js"></script>
+    <link rel="shortcut icon" href="icons/summer.ico">
 </head>
-
 
 <body>
 
-<section id='port--about-sec'>
-asdfasdfasdfasdfasdf
-</section>
+<section id='port--project-sec' class="main-section">
+	<div class='section-title section-title-position-p'>
+	 	<p>[Projects]</p>
+	</div>
+	<div class='section-des'>
+	 	<p>There are some of the projects I've been working on while studying at Modern Developer.</p>
+	</div>
 
-<section id='port--project-sec'>
-asdfasdfasdfasdfasdf
-</section>
+	<div class="section-content section-content-projects">
 
-<section id='port--skills-sec'>
-asdfasdfasdfasdfasdf
-</section>
+		<input type="radio" name="tabs" value="pj1" id="pj-1" >
+		<input type="radio" name="tabs" value="pj2" id="pj-2" checked>
+		<input type="radio" name="tabs" value="pj3" id="pj-3">
+		<input type="radio" name="tabs" value="pj4" id="pj-4">
+		<input type="radio" name="tabs" value="pj5" id="pj-5">
+		<input type="radio" name="tabs" value="pj6" id="pj-6">
 
-<section id='port--contact-sec'>
-asdfasdfasdfasdfasdf
+		<div class="projects-nav">
+			<label for="pj-1">Buttons</label>
+			<label for="pj-2">Product Listing</label>
+			<label for="pj-3">Forms</label>
+			<label for="pj-4">Calculator</label>
+			<label for="pj-5">Business Card</label>
+			<label for="pj-6">Tab Component</label>
+		</div>
+
+		<div class="projects-tabs">
+			<div class="projects-tabs-out1">	
+				<input type="radio" name="abc" id="slide1-pj1" checked>
+				<input type="radio" name="abc" id="slide2-pj1">
+				<input type="radio" name="abc" id="slide3-pj1">
+			    <div class="carousel-slides-1">
+					<img class="carousel-slide-1" src="icons/btn.png" >
+					<img class="carousel-slide-2" src="icons/btn_dyn.gif" >
+					<div class="carousel-slide-3 carousel-slide-live">Live demo goes here</div>
+			    </div>
+			    <div class="carousel-nav-dots" id="dots-pj1">
+					<label for="slide1-pj1" id="slide1-label-pj1"></label>
+					<label for="slide2-pj1" id="slide2-label-pj1"></label>
+					<label for="slide3-pj1" id="slide3-label-pj1"></label>
+			    </div>
+			</div>
+
+			<div class="projects-tabs-out2">
+				<input type="radio" name="abc" id="slide1-pj2" checked>
+				<input type="radio" name="abc" id="slide2-pj2">
+				<input type="radio" name="abc" id="slide3-pj2">
+			    <div class="carousel-slides-2">
+					<img src="icons/pro.png" class="carousel-slide-1">
+					<img src="icons/pro_dyn.gif" class="carousel-slide-2">
+					<div class="carousel-slide-3 carousel-slide-live">Live demo goes here</div>
+			    </div>
+			    <div class="carousel-nav-dots" id="dots-pj2">
+					<label for="slide1-pj2" id="slide1-label-pj2"></label>
+					<label for="slide2-pj2" id="slide2-label-pj2"></label>
+					<label for="slide3-pj2" id="slide3-label-pj2"></label>
+			    </div>
+			</div>
+
+			<div class="projects-tabs-out3">
+				<input type="radio" name="abc" id="slide1-pj3" checked>
+				<input type="radio" name="abc" id="slide2-pj3">
+				<input type="radio" name="abc" id="slide3-pj3">
+			    <div class="carousel-slides-3">
+					<img src="icons/form.png" class="carousel-slide-1">
+					<img src="icons/form_dyn.gif" class="carousel-slide-2">
+					<div class="carousel-slide-3 carousel-slide-live">Live demo goes here</div>
+			    </div>
+			    <div class="carousel-nav-dots">
+					<label for="slide1-pj3" id="slide1-label-pj3"></label>
+					<label for="slide2-pj3" id="slide2-label-pj3"></label>
+					<label for="slide3-pj3" id="slide3-label-pj3"></label>
+			    </div>
+			</div>
+
+			<div class="projects-tabs-out4">
+			    <div class="carousel-slides-4">
+			      <img src="icons/cal.png" class="carousel-slide-1">
+			      <img src="icons/cal_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
+			</div>
+
+			<div class="projects-tabs-out5">
+			    <div class="carousel-slides-5">
+			      <img src="icons/buz.png" class="carousel-slide-1">
+			      <img src="icons/buz_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
+			</div>
+
+			<div class="projects-tabs-out6">
+			    <div class="carousel-slides-6">
+			      <img src="icons/ass.png" class="carousel-slide-1">
+			      <img src="icons/ass_dyn.gif" class="carousel-slide-2">
+			      <div class="carousel-slide-3 carousel-slide-live">
+			        Live demo goes here
+			      </div>
+			    </div>
+			</div>
+				<!--<div class="projects-tabs-content-intro">
+					<h4>Technologies: HTML and CSS</h4>
+					<p>Simple and reusable button components.</p>
+					<a href="https://maoyubin.github.io/components/buttons/index.html" target="_blank">
+						<i class="icon-heart" aria-hidden="true"></i>View Demo</a>
+					<a href="https://github.com/maoyubin/maoyubin.github.io/tree/master/components/buttons" target="_blank">
+						<i class="icon-github-circled" aria-hidden="true"></i>
+					 	View Source on GitHub
+					</a>
+				</div>-->
+			<!-- End Projects -->
+		</div>
+	</div>
 </section>
-  
 </body>
 </html>
